@@ -4,16 +4,16 @@
       <router-link to="/" class="bg-blue-600">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-    <main class="flex flex-col h-screen ">
+    <main class="flex flex-col ">
 
       <!-- Top nav -->
-      <nav class="flex  border-b-2 border-teal-500 h-13 ">
-        <div class="w-4/6 flex justify-between border- border-blue-600 mx-auto ">
+      <nav class="flex  border-b-2 border-teal-500  ">
+        <div class="w-4/6 flex justify-between  mx-auto ">
 
 
-          <div class="logo  self-center  p-4 ">
-            <router-link to="/">
-              <img src="./assets/logo.png" class="w-14 h-14" alt="Twinstrap">
+          <div class="logo flex  self-center ">
+            <router-link to="/" class="flex">
+              <img src="./assets/logo.png" class="flex w-13 h-13" alt="Twinstrap">
             </router-link>
           </div>
 
@@ -52,15 +52,6 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
 
 </style>

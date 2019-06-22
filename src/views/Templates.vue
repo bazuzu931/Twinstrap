@@ -1,5 +1,8 @@
 <template>
 	<!-- Main content -->
-	<div class="mt-6  flex w-4/6 justify-between mx-auto bg-green-200 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error unde mollitia, adipisci ratione explicabo odit nihil, sit totam vero quis, facilis numquam accusantium repudiandae. Ipsam explicabo repellat delectus asperiores at eius illum, eligendi veniam et reiciendis similique aperiam laudantium, dolor. Quaerat, tempore iure molestias, esse provident blanditiis necessitatibus. Minima quae voluptatibus aspernatur labore dolorum delectus recusandae, laudantium, quod minus et temporibus molestiae quisquam distinctio illum excepturi earum eaque praesentium neque. Sunt laudantium doloribus repellat, voluptatum, atque nobis fugiat excepturi velit minus amet corporis esse voluptatibus beatae debitis sint recusandae rerum iure modi libero nostrum quis, necessitatibus cupiditate placeat. Voluptates.
+	<div class="mt-6  flex w-4/6 justify-between mx-auto bg-green-200 ">
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error unde mollitia, adipisci ratione explicabo odit nihil, sit totam vero quis, facilis numquam accusantium repudiandae. Ipsam explicabo repellat delectus asperiores at eius illum, eligendi veniam et reiciendis similique aperiam laudantium, dolor. Quaerat, tempore iure molestias, esse provident blanditiis necessitatibus. Minima quae voluptatibus aspernatur labore dolorum delectus recusandae, laudantium, quod minus et temporibus molestiae quisquam distinctio illum excepturi earum eaque praesentium neque. Sunt laudantium doloribus repellat, voluptatum, atque nobis fugiat excepturi velit minus amet corporis esse voluptatibus beatae debitis sint recusandae rerum iure modi libero nostrum quis, necessitatibus cupiditate placeat. Voluptates.
+
 	</div>
 </template>
