@@ -3,8 +3,14 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Components from './views/Components.vue'
 import Templates from './views/Templates.vue'
-import Label from './views/Label.vue'
-import Button from './views/Button.vue'
+
+// Components
+import Label from './views/components/Label.vue'
+import Button from './views/components/Button.vue'
+
+// Templates
+import Admin from './views/templates/Admin.vue'
+import simpleBlogPage from './views/templates/simpleBlogPage.vue'
 
 Vue.use(Router)
 
@@ -35,7 +41,17 @@ export default new Router({
     {
       path: '/templates',
       name: 'templates',
-      component: Templates
+      component: Templates,
+      children: [
+          {
+            path: 'admin',
+            component: Admin
+          },
+          {
+            path: 'simple-blog-page',
+            component: simpleBlogPage
+          }
+      ]
     },
   ]
 })

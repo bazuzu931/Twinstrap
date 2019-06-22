@@ -1,8 +1,30 @@
 <template>
 	<!-- Main content -->
-	<div class="mt-6  flex w-4/6 justify-between mx-auto bg-green-200 ">
+	<div class="mt-6  flex w-4/6 justify-between mx-auto ">
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error unde mollitia, adipisci ratione explicabo odit nihil, sit totam vero quis, facilis numquam accusantium repudiandae. Ipsam explicabo repellat delectus asperiores at eius illum, eligendi veniam et reiciendis similique aperiam laudantium, dolor. Quaerat, tempore iure molestias, esse provident blanditiis necessitatibus. Minima quae voluptatibus aspernatur labore dolorum delectus recusandae, laudantium, quod minus et temporibus molestiae quisquam distinctio illum excepturi earum eaque praesentium neque. Sunt laudantium doloribus repellat, voluptatum, atque nobis fugiat excepturi velit minus amet corporis esse voluptatibus beatae debitis sint recusandae rerum iure modi libero nostrum quis, necessitatibus cupiditate placeat. Voluptates.
+
+	    <nav class="left-navbar  w-1/5 flex flex-col p-6 ">
+	      	<ul>
+			    <!--  Panel 1 [Label]  -->
+	            <li class="">
+	                <router-link to="/templates/admin" class="flex block text-gray-600 hover:text-black p-2">Admin</router-link>
+	            </li>
+
+	            <!--  Panel 2 [Button]  -->
+	            <li class="">
+	                <router-link to="/templates/simple-blog-page" class="flex block text-gray-600 hover:text-black p-2">Simple Blog page</router-link>
+	            </li>
+
+	        </ul>
+	    </nav>
+	    <!-- End of Left nav -->
+
+
+	    <div class="content bg-red-500 w-4/5 p-4 ">
+	        <router-view/>
+	    </div>
+	    <!-- End of content -->
 
 	</div>
+	<!-- End  of Main content -->
 </template>
