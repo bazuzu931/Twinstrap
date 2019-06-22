@@ -1,3 +1,4 @@
+
 <template>
   <div class="">
   	label
@@ -5,8 +6,6 @@
 </template>
 
 <script>
-
 export default {
-
 }
 </script>

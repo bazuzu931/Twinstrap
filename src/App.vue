@@ -21,7 +21,7 @@
           <div class="up-menu flex self-center">
 
             <div class="components p-4 font-bold text-xl">
-              <router-link to="/components" class="block text-gray-600 hover:text-teal-600">Components</router-link>
+              <router-link to="/components/label" class="block text-gray-600 hover:text-teal-600">Components</router-link>
             </div>
             <div class="templates ml-9 p-4 font-bold text-xl">
               <router-link to="/templates" class="block text-gray-600 hover:text-teal-600">Templates</router-link>
