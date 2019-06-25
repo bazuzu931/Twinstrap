@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <!-- <div id="nav">
       <router-link to="/" class="bg-blue-600">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,33 +7,37 @@
     <main class="flex flex-col ">
 
       <!-- Top nav -->
-      <nav class="flex  border-b-2 border-teal-500  ">
-        <div class="w-4/6 flex justify-between  mx-auto ">
+      <div id="header">
+        <div class="flex w-full bg-white border-b-2 border-teal-500  fixed top-0  ">
+          <div class="w-4/6 flex justify-between  mx-auto  py-2">
 
 
-          <div class="logo flex  self-center ">
-            <router-link to="/" class="flex">
-              <img src="./assets/logo.png" class="flex w-13 h-13" alt="Twinstrap">
-            </router-link>
-          </div>
-
-
-          <div class="up-menu flex self-center">
-
-            <div class="components p-4 font-bold text-xl">
-              <router-link to="/components/label" class="block text-gray-600 hover:text-teal-600">Components</router-link>
-            </div>
-            <div class="templates ml-9 p-4 font-bold text-xl">
-              <router-link to="/templates/admin" class="block text-gray-600 hover:text-teal-600">Templates</router-link>
+            <div class="logo flex  self-center ">
+              <router-link to="/" class="flex">
+                <img src="./assets/logo.png" class="flex w-15 h-9" alt="Twinstrap">
+              </router-link>
             </div>
 
+
+            <div class="up-menu flex self-center">
+
+              <div class="components px-4 font-bold text-xl">
+                <router-link to="/components/label" class="block text-gray-600 hover:text-teal-600">Components</router-link>
+              </div>
+              <div class="templates ml-9 px-4 font-bold text-xl">
+                <router-link to="/templates/admin" class="block text-gray-600 hover:text-teal-600">Templates</router-link>
+              </div>
+
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
       <!-- End of Top nav -->
 
 
-      <router-view/>
+      <div class="main-body mt-13 ">
+        <router-view/>
+      </div>
 
 
 
@@ -44,13 +48,20 @@
 
 
 
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   color: #2c3e50;
+
+}
+
+// чтобы элементы не смещались при появлении общего вертикального скрола
+::-webkit-scrollbar {
+display: none;
 }
 
 

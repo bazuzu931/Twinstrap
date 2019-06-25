@@ -1,18 +1,43 @@
 <template>
-  <div class="home">
-  	Home
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div>
+
+
+    <prism>{{ html }}</prism>
+
+    <prism language="js">
+    	const me = {
+		  name: "Yasmin ZY",
+		  country: "Indonesia"
+		}
+	</prism>
+
+    <prism language="scss">
+    	.grid {
+		  display: grid;
+		  @media (min-width: 576px) {
+		    grid-template-columns: 1fr 1fr;
+		  }
+		}
+	</prism>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      html: `<article>
+  <h1 class="title">How to Use Prism in a Vue/Nuxt Project</h1>
+  <p>Go to https://www.yasminzy.com/tutorial/prism.html</p>
+</article>`,
+    };
   }
-}
+};
 </script>
+
+<style lang="scss" scoped>
+pre:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+</style>
