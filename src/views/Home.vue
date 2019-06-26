@@ -1,8 +1,12 @@
 <template>
   <div>
+    <div class="flex w-3/6 justify-between mx-auto ">
+      home
+    </div>
 
 
-    <prism>{{ html }}</prism>
+
+<!--     <prism>{{ html }}</prism>
 
     <prism language="js">
     	const me = {
@@ -18,7 +22,7 @@
 		    grid-template-columns: 1fr 1fr;
 		  }
 		}
-	</prism>
+	</prism> -->
 
   </div>
 </template>

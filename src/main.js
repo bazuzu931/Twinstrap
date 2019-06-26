@@ -13,6 +13,9 @@ import "prismjs/plugins/autolinker/prism-autolinker.css";
 import Prism from "vue-prism-component";
 Vue.component("prism", Prism);
 
+import VueClipboard from 'vue-clipboard2'
+Vue.use(VueClipboard)
+
 Vue.config.productionTip = false
 
 new Vue({

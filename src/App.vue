@@ -8,7 +8,7 @@
 
       <!-- Top nav -->
       <div id="header">
-        <div class="flex w-full bg-white border-b-2 border-teal-500  fixed top-0  ">
+        <div class="flex w-full fixed top-0 bg-teal-700 ">
           <div class="w-4/6 flex justify-between  mx-auto  py-2">
 
 
@@ -22,10 +22,10 @@
             <div class="up-menu flex self-center">
 
               <div class="components px-4 font-bold text-xl">
-                <router-link to="/components/label" class="block text-gray-600 hover:text-teal-600">Components</router-link>
+                <router-link to="/components/label" class="block text-white ">Components</router-link>
               </div>
               <div class="templates ml-9 px-4 font-bold text-xl">
-                <router-link to="/templates/admin" class="block text-gray-600 hover:text-teal-600">Templates</router-link>
+                <router-link to="/templates/admin" class="block text-white ">Templates</router-link>
               </div>
 
             </div>
