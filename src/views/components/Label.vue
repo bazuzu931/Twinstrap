@@ -6,6 +6,7 @@
 		<div id="label-1" class="mb-9">
 			<div class="text-lg pb-3">Label 1</div>
 			<div class="border border-gray-500 bg-gray-100 rounded-lg">
+
 				<!-- Start of Live box -->
 				<div id="live-example" class="px-4 py-8">
 					<div class="flex">

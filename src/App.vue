@@ -1,5 +1,5 @@
 <template>
-  <div id="app" >
+  <div id="app" style="background-color: green" >
     <!-- <div id="nav">
       <router-link to="/" class="bg-blue-600">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,27 +8,38 @@
 
       <!-- Top nav -->
       <div id="header">
-        <div class="flex w-full fixed top-0 bg-teal-700 ">
-          <div class="w-4/6 flex justify-between  mx-auto  py-2">
+        <div class="flex w-full fixed top-0 bg-teal-700 z-50">
+          <div class="w-full lg:w-5/6 xl:w-4/6 flex justify-between  mx-auto  py-2">
 
-
-            <div class="logo flex  self-center ">
+            <!-- Logo -->
+            <div class="logo flex  self-center ml-6 lg:ml-0">
               <router-link to="/" class="flex">
-                <img src="./assets/logo.png" class="flex w-15 h-9" alt="Twinstrap">
+                <img src="./assets/logo.png" class="hidden md:flex w-11 h-8" alt="Twinstrap">
+                <span class="hidden md:flex self-center text-3xl pl-4 text-white font-bold ">Twinstrap</span>
               </router-link>
             </div>
+            <!-- End of Logo -->
 
+            <!-- Top menu items -->
+            <div class="flex flex-col  sm:flex-row  h-screen sm:h-full justify-center self-center mr-6 lg:mr-0 "
+            :style="[ menuStatus ? '' : {height: '60px'} ]" >
 
-            <div class="up-menu flex self-center">
+                <!-- responsive menu Icon -->
+                <font-awesome-icon  class="sm:hidden absolute top-0 right-0 mt-6 mr-6 text-4xl text-white" @click="menuStatus = !menuStatus"
+                icon="bars" />
 
-              <div class="components px-4 font-bold text-xl">
-                <router-link to="/components/label" class="block text-white ">Components</router-link>
-              </div>
-              <div class="templates ml-9 px-4 font-bold text-xl">
-                <router-link to="/templates/admin" class="block text-white ">Templates</router-link>
-              </div>
+                <div class=" px-2 xl:px-4 font-bold text-3xl sm:text-xl self-center">
+                  <router-link to="/components/label" class="block text-white my-9 sm:my-0 "
+                  :style="[ menuStatus ? '' : closeMenuStyle ]" >Components</router-link>
+                </div>
 
+                <div class="  ml-5 xl:ml-9  px-2 xl:px-4 font-bold text-3xl sm:text-xl self-center">
+                  <router-link to="/templates/admin" class="block text-white my-9 sm:my-0 "
+                  :style="[ menuStatus ? '' : closeMenuStyle ]" >Templates</router-link>
+                </div>
             </div>
+            <!-- End of top menu items -->
+
           </div>
         </div>
       </div>
@@ -46,6 +57,20 @@
   </div>
 </template>
 
+<script>
+  export default {
+    data () {
+      return {
+        menuStatus: true,
+        closeMenuStyle: {
+          backgroundColor: 'transparent',
+          display: 'hidden'
+        }
+      }
+    },
+
+  }
+</script>
 
 
 
@@ -64,5 +89,12 @@
 display: none;
 }
 
+.openMenu {
+  color: red ;
+}
+
+.closeMenu {
+  color: red ;
+}
 
 </style>
