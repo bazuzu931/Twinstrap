@@ -1,52 +1,53 @@
 <template>
-  <div id="app" style="background-color: green" >
+  <div id="app" >
     <!-- <div id="nav">
       <router-link to="/" class="bg-blue-600">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
     <main class="flex flex-col ">
 
-      <!-- Top nav -->
-      <div id="header">
-        <div class="flex w-full fixed top-0 bg-teal-700 z-50">
-          <div class="w-full lg:w-5/6 xl:w-4/6 flex justify-between  mx-auto  py-2">
 
-            <!-- Logo -->
-            <div class="logo flex  self-center ml-6 lg:ml-0">
+
+
+      <!-- Top nav -->
+      <nav class="bg-solar-600 p-2 mt-0 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex flex-wrap items-center">
+
+          <!-- Logo -->
+          <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
               <router-link to="/" class="flex">
                 <img src="./assets/logo.png" class="hidden md:flex w-11 h-8" alt="Twinstrap">
                 <span class="hidden md:flex self-center text-3xl pl-4 text-white font-bold ">Twinstrap</span>
               </router-link>
-            </div>
-            <!-- End of Logo -->
-
-            <!-- Top menu items -->
-            <div class="flex flex-col  sm:flex-row  h-screen sm:h-full justify-center self-center mr-6 lg:mr-0 "
-            :style="[ menuStatus ? '' : {height: '60px'} ]" >
-
-                <!-- responsive menu Icon -->
-                <font-awesome-icon  class="sm:hidden absolute top-0 right-0 mt-6 mr-6 text-4xl text-white" @click="menuStatus = !menuStatus"
-                icon="bars" />
-
-                <div class=" px-2 xl:px-4 font-bold text-3xl sm:text-xl self-center">
-                  <router-link to="/components/label" class="block text-white my-9 sm:my-0 "
-                  :style="[ menuStatus ? '' : closeMenuStyle ]" >Components</router-link>
-                </div>
-
-                <div class="  ml-5 xl:ml-9  px-2 xl:px-4 font-bold text-3xl sm:text-xl self-center">
-                  <router-link to="/templates/admin" class="block text-white my-9 sm:my-0 "
-                  :style="[ menuStatus ? '' : closeMenuStyle ]" >Templates</router-link>
-                </div>
-            </div>
-            <!-- End of top menu items -->
-
           </div>
+          <!-- End of logo -->
+
+        <!-- Top navbar items -->
+        <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+          <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+
+            <li class="mr-3 sm:mr-10">
+              <router-link to="/" class="block text-white my-7 sm:my-0 ">Home</router-link>
+            </li>
+
+            <li class="mr-3 sm:mr-10">
+              <router-link to="/components/label" class="block text-white my-7 sm:my-0 ">Components</router-link>
+            </li>
+
+            <li class="mr-3 sm:mr-10">
+              <router-link to="/templates" class="block text-white my-7 sm:my-0 ">Template</router-link>
+            </li>
+
+          </ul>
         </div>
+        <!-- End of top navbar items -->
+
       </div>
+      </nav>
       <!-- End of Top nav -->
 
 
-      <div class="main-body mt-13 ">
+      <div class="main-body mt-13 " >
         <router-view/>
       </div>
 
@@ -61,10 +62,10 @@
   export default {
     data () {
       return {
-        menuStatus: true,
+        menuStatus: false,
         closeMenuStyle: {
           backgroundColor: 'transparent',
-          display: 'hidden'
+          display: 'none'
         }
       }
     },
