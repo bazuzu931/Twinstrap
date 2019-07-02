@@ -23,19 +23,19 @@
           <!-- End of logo -->
 
         <!-- Top navbar items -->
-        <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+        <div class="flex w-full sm:w-4/6 sm:m-auto pt-2 content-center justify-between md:w-1/2 md:justify-end">
           <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
 
             <li class="mr-3 sm:mr-10">
-              <router-link to="/" class="block text-white my-7 sm:my-0 ">Home</router-link>
+              <router-link to="/" class="block text-white my-3 sm:my-0 ">Home</router-link>
             </li>
 
             <li class="mr-3 sm:mr-10">
-              <router-link to="/components/label" class="block text-white my-7 sm:my-0 ">Components</router-link>
+              <router-link to="/components/label" class="block text-white my-3 sm:my-0 ">Components</router-link>
             </li>
 
-            <li class="mr-3 sm:mr-10">
-              <router-link to="/templates" class="block text-white my-7 sm:my-0 ">Template</router-link>
+            <li class=" ">
+              <router-link to="/templates" class="block text-white  my-3 sm:my-0 ">Template</router-link>
             </li>
 
           </ul>
