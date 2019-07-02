@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex w-3/6 justify-center mx-auto">
+    <div class="flex w-5/6 xl:w-3/6 justify-center mx-auto">
       <div class="content">
         <h1 class="text-5xl mb-10">What is <span class="text-teal-500">Twinstrap</span>?</h1>
         <p class="text-xl">Twinstrap is a collecton of conponents and templates based on Tailwindcss framework</p>
