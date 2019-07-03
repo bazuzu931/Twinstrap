@@ -11,7 +11,7 @@
 
       <!-- Top nav -->
       <nav class="bg-solar-600 p-2 mt-0 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex flex-wrap items-center">
+        <div class="container mx-auto flex flex-wrap w-full lg:w-4/5 items-center">
 
           <!-- Logo -->
           <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
